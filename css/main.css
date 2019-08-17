@@ -1,0 +1,358 @@
+html {
+    /* este es para que reaccionen bien los nmargin width y padding
+    cuando los aplicamos en la pag */
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+/* reseta el codigo y aplica bien los padding margin y width
+siempre se debe colocar en las pag que realicemos */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h2, h3{
+    font-size: 2.6em;
+}
+
+/* darle estylos a todo lo que esta dentro del body */
+
+body {
+    overflow-x:hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cursiva{
+    font-family: 'Pacifico', cursive;
+
+}
+.tamaño{
+    font-size: 1.3em;
+}
+.letra{
+    color: #ffffff;
+}
+.titulo {  
+ color: #e84118;
+}
+.font{
+    font-size: 1.2em;
+}
+
+
+/** Globales **/
+
+/* esta es muy importante se utliza en todos los proyectos
+le da el tamaño a la imagen de manera correcta para que se vea en la 
+pagina y se adapte a los styos que l estemos dando */
+img {
+    max-width: 100%;
+}
+
+.montar{
+    position: relative;
+    width: 40%;
+    /* position: fixed; */
+    /* top: 3em; */
+    /* right: 20px; */
+    /* background-color: #e84118; */
+    /* padding: 10px; */
+    z-index: 30000000 !important; 
+    transition:ease-in-out 1s;
+
+}
+.arriba{
+    width: 50px !important;
+    height: 50px;;
+    margin-top: 40em;
+    background: rgba(232, 65, 24, .7);
+    border-radius: 50%;
+
+}
+.montar img:hover{
+    /* padding: 8px; */
+    transform: scale(1.1)
+}
+.carousel-item img{
+    max-height: 400px;
+    object-fit: cover;
+}
+/* .grande{
+    background-color: black;
+} */
+.navbar{
+    background-color:rgba(01, 01, 01, .8);
+
+}
+.navbar-brand{
+    font-weight: 100;
+font-size: 2em;
+
+}
+.nav-item{
+    font-size: 1.3em;
+    transition: all .8s;
+}
+.nav-item:hover{
+    transform: scale(1.1);
+    background-color: #e84118;
+}
+/* #carouselExampleFade{
+    margin-top: 45px !important;
+} */
+
+
+.slaider{
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+
+}
+
+.slaider h1{
+    font-size: 3.9em;
+}
+.background-overlay{
+position: absolute;
+min-width: 100%;
+min-height: 100%;
+top: 0;
+left: 0;
+background-color: rgb(01, 01, 01,.6) !important;
+z-index: 10;
+
+}
+.carousel-item img{
+min-width: 100%;
+min-height: 100%;
+
+}
+.carousel-control-next, .carousel-control-prev{ 
+    position: absolute;
+    z-index: 15 !important;
+}
+
+
+.centrar{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+z-index: 12 !important;
+}
+.imagenes{
+    background-color: rgba(0, 168, 255,.3)
+}
+.btn{
+    font-size: .8em;
+}
+.card-body img{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border: 4px solid #e84118;
+}
+
+.servicios{
+    position: relative;
+    background-image: url(../img/nuevoservicio.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+    min-width: 100% !important;
+    min-height: 300px;
+    overflow: hidden;
+
+    object-fit: cover;
+    margin: 0 auto;
+}
+.servicios img{
+    display: block;
+    min-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+max-height: 600px;  
+ object-fit: cover;
+}
+.servicios .container{
+    min-width: 100%;
+    margin: 0 auto;
+    padding: 0px 70px;
+        position: absolute;
+        transform: translateY(10%);
+
+
+    z-index: 1000;
+}
+.servicios .subir{
+    display: block;
+    /* position: absolute; */
+    /* top: 0; */
+text-align: center !important;
+    margin: 0 auto !important;
+    
+
+}
+
+.servicios h3{
+    font-size: 2.6em;
+}
+
+.servicios p{
+    text-align: center;
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+@media(max-width:768px){
+    .somos{
+        width: 50% !important;
+    }
+    .card-body{
+        margin-bottom: 10px;
+        border: none !important;
+    }
+    .card{
+        border: none !important;
+    }
+    .card-body img {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        border: 4px solid #e84118;
+}
+}
+
+@media(max-width:620px){ 
+.servicios p {
+    font-size: .9em;
+    text-align: center;
+    line-height: 2;
+}
+.servicios .container {
+    min-width: 100%;
+    margin: 0 auto;
+    padding: 0px 50px;
+    position: absolute;
+    transform: translateY(3%);
+    z-index: 1000;
+}
+}
+
+
+@media(max-width:620px){ 
+
+.navbar-brand {
+    font-weight: 100;
+    font-size: 1.5em;
+}
+.slaider h1{
+    font-size: 2.8em;
+}
+.tamaño{
+    padding: 20px;
+    font-size: 1.1em;
+}
+.arriba {
+    width: 40px !important;
+    height: 40px;
+    margin-top: 42em;
+    background: rgba(232, 65, 24, .7);
+    border-radius: 50%;
+}
+.font{
+    font-size: 1em;
+}
+}
+
+@media(max-width:380px){ 
+
+    .navbar-brand {
+        font-weight: 100;
+        font-size: 1.4em;
+    }
+    .slaider h1{
+        margin-top: -30px;
+        font-size: 2.5em;
+    }
+    .tamaño{
+        padding: 20px;
+        font-size: 1.1em;
+    }
+    .arriba {
+        width: 30px !important;
+        height: 30px;
+        margin-top: 28em;
+        background: rgba(232, 65, 24, .7);
+        border-radius: 50%;
+    }
+    .font{
+        font-size: 1em;
+    }
+    h2, h3{
+        font-size: 2em;
+    }
+    .servicios h3{
+        font-size: 2em;
+padding: 10px 0 !important;   
+ }
+ .card-body img {
+     display: block;
+    width: 200px;
+    height: 200px;
+
+    border: 2px solid #e84118;
+} 
+
+}
+
+@media(max-width:350px){
+    .servicios p{
+        font-size: .8em !important;
+        height: 1 !important;
+    }
+} 
+
+@media(max-width:315px){
+    .servicios p{
+        font-size: .7em !important;
+        height: 2 !important;
+    }
+    .slaider h1 {
+        margin-top: -30px;
+        font-size: 2em;
+    }
+    .tamaño{
+        font-size: 1em;
+        padding: 20px 0 !important;
+    }
+    .somos .font{
+        padding: 0 10px !important;
+        margin: 0 10px !important;
+    }
+    .somos .container{
+        padding: 0;
+        margin: 0 !important;
+    }
+    .pb-5, .py-5 {
+        padding-bottom: 0rem!important;
+    }
+    .footer p{
+        margin: 0 !important;
+        padding: 0;
+    }
+    
+    
+    .footer{
+        padding: 20px 0 !important;
+    }
+    .letra{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100 !important;
+  /* padding: 10px !important; */
+    }
+    .card-body img {
+        display: block;
+       width: 150px;
+       height: 150px;
+   
+       border: 2px solid #e84118;
+} 
+
+
